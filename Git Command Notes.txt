@@ -7,7 +7,7 @@ Commit Files
 	- git commit -m "YOUR MESSAGE"
 
 Commit all files in git
-	- git add --a
+	- git add  .
 
 Check if files are commited
 	- git log
@@ -112,3 +112,7 @@ Push branch to remote
 
 Delete branch in remote
 	- git push -d origin BRANCH_NAME
+
+git config username and email
+	- git config --global user.name "omprakash2469"
+	- git config --global user.email "oprajapati249@gmail.com"
