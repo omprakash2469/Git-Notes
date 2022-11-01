@@ -1,0 +1,121 @@
+Make a folder in git
+	- git init
+Check Git status
+	- git status
+Commit Files
+	- git commit <filename>
+	- git commit -m "YOUR MESSAGE"
+
+Commit all files in git
+	- git add  .
+
+Check if files are commited
+	- git log
+
+Remove folder from git
+	- rm -rf .git
+
+Clone a git repository
+	- git clone URL-TO-CLONE
+
+Ignore files
+make a .gitignore file and enter name of files to ignore
+	- touch .gitignore
+
+Differences of files
+gitdiff will compare working directory with staging area
+	- git diff
+
+compare last commit with current staging area
+	- git diff --staged
+
+Commits all tracked files skiping staging area
+	- git commit -a -m "Direct commit"
+
+Remove file or folder
+	- git rm file.txt
+
+Rename file or folder
+	- git mv file.txt file2.txt
+
+Untrack file
+	- git rm --cached db.accdb
+
+Git diff with all commits
+	- git log -p
+
+Git diff with number of given commits ( n for numbers )
+	- git log -p -n
+
+Gives short definition of commit
+	- git log --stat
+
+Show all commit in oneline
+	- git log --pretty=oneline
+
+Show all commit in short
+	- git log --pretty=short
+
+Show all commit with some info
+	- git log --pretty=full
+
+Show all commit within the given time
+	- git log --since=2.days
+
+Show all commit in mentioned format
+	- git log --pretty=format:"%h -- %an"
+
+Change old commits
+	- git commit --amend
+
+Unstage a staged file
+	- git restore --staged <filename>
+
+Restore previous version of file or unmodify a file
+	- git checkout -- <filename.txt>
+
+Git remote
+	- git remote
+	- git remote -v
+	- git remote add origin git@github.com:omprakash2469/gitpractice.git
+	- git push -u origin master
+
+Git Alias
+	- git config --global alias.st status
+
+Creating another git branch
+	- git checkout -b develop
+	- git checkout master
+	- git branch
+
+Merge git in master branch
+	- git merge BRANCH_NAME
+
+Branch Deletion
+	- git branch -d BRANCH_NAME ( show error if not merged )
+	- git branch -D BRANCH_NAME ( force delete branch without merging )
+	- git branch -v ( show all branches with hash and last commit )
+	- git branch --merged ( show all merged branch )
+	- git branch --no-merged ( show all unmerged branch )
+
+Branching Workflow
+a. Long Running Branches
+	- master
+	- develop
+	- PU ( proposed update )
+b. Topic Branches
+	- replaces text with js { TOPIC_NAME }
+
+Push branch to remote
+	- git push origin BRANCH_NAME
+	- git push origin BRANCH_NAME:BRANCH_ALIAS_IN_REMOTE
+
+Delete branch in remote
+	- git push -d origin BRANCH_NAME
+
+git config username and email
+	- git config --global user.name "omprakash2469"
+	- git config --global user.email "oprajapati249@gmail.com"
+
+git update remote url
+	- git remote set-url origin REPO_URL
